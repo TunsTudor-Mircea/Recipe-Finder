@@ -28,9 +28,9 @@ Vector Store: **FAISS**
 
 Retriever: **LangChain**
 
-LLM: **OpenAI GPT-4**
+LLM: **Google Gemma 3**
 
-Frontend: **Streamlit**
+Frontend: **React**
 
 ## 3. Dataset - **RecipeNLG**
 
