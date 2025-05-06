@@ -20,6 +20,8 @@ Allow users to ask questions like:
 
 - Use a language model to generate responses based on relevant recipe chunks.
 
+![Example](https://github.com/TunsTudor-Mircea/Recipe-Finder/blob/main/example_usage.png?raw=true)
+
 ## 2. Tech Stack
 
 Embeddings: **sentence-transformers/all-MiniLM-L6-v2 (HuggingFace)**
