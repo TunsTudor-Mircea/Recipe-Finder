@@ -36,6 +36,10 @@ Frontend: **Streamlit**
 
 223k+ structured recipes with ingredients, instructions, cuisines, diet types, etc.
 
+"RecipeNLG: A Cooking Recipes Dataset for Semi-Structured Text Generation"
+
+url = https://recipenlg.cs.put.poznan.pl
+
 ## 4. Development Steps
 ✅ Step 1: Load and Preprocess the Data
 Parse each recipe into:
