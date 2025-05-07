@@ -24,7 +24,7 @@ Allow users to ask questions like:
 
 ## 2. Tech Stack
 
-Embeddings: **sentence-transformers/all-MiniLM-L6-v2 (HuggingFace)**
+Embeddings: **BAAI/bge-small-en-v1.5 (HuggingFace)**
 
 Vector Store: **FAISS**
 
