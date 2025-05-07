@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import ReactMarkdown from "react-markdown";
 import "./App.css";
 
 function App() {
@@ -34,9 +35,12 @@ function App() {
       <button onClick={handleSearch} disabled={loading}>
         {loading ? "Generating..." : "Find Recipes"}
       </button>
-      <div className="response">
-        {response && <div className="response">{response}</div>}
-      </div>
+
+      {response && (
+        <div className="response">
+          <ReactMarkdown>{response}</ReactMarkdown>
+        </div>
+      )}
     </div>
   );
 }
