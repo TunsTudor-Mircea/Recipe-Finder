@@ -1,0 +1,224 @@
+{
+  "timestamp": "2025-05-26T21:51:43.686363",
+  "total_tests": 8,
+  "passed_tests": 4,
+  "failed_tests": 4,
+  "test_results": [
+    {
+      "test_id": "test_1",
+      "query": "Quick breakfast with eggs",
+      "actual_output": "For your query \"Quick breakfast with eggs,\" here are some thoughtful recommendations based on the recipes provided:\n\n### 1. **Egg Breakfast Muffins**\n   - **Why It Fits**: These muffins are a perfect choice for a quick, baked breakfast. They're versatile and can be prepared in advance or eaten fresh.\n   - **How to Adjust**: If you prefer fewer eggs per serving, consider halving the recipe.\n\n### 2. **Kenny's Scrambled Eggs with Toast**\n   - **Why It Fits**: This option is ideal for a quick meal that allows for customization. The use of heavy cream gives it flexibility in texture—runny or harder-boiled.\n   - **Quick Tip**: Adjust the cooking time based on your preference, ensuring eggs reach soft硬度 without overcooking.\n\n### 3. **T.V. Eggs (Kids Favorite Fun To Eat Breakfast!)**\n   - **Why It Fits**: A fun and visually appealing option, especially suitable for younger eaters. The method is straightforward—frying a sunny-side-up egg on buttered bread.\n   - **Quick Tip**: Use whole-grain bread for added fiber.\n\n### Additional Tips:\n- **Adjust Ingredients**: You can use different cheeses or seasonings in the muffins to suit your taste.\n- **Customization**: Kenny's recipe allows you to add heavy cream for more flavor and texture.\n- **Time Efficiency**: Scrambled eggs are quick, while muffins take about 15-18 minutes in the oven.\n\nBoth options offer a variety of textures and flavors, making them ideal for different preferences. Enjoy your breakfast!",
+      "expected_output": "Based on your query 'Quick breakfast with eggs', here are some great recipe recommendations:\n\n1. Egg Breakfast Muffins (Hurrythefoodup.Com)\n2. T.V. Eggs - Kids Favorite Fun To Eat Breakfast!\n\nThese recipes match your preferences for egg, breakfast, quick.",
+      "scenario_info": {
+        "query": "Quick breakfast with eggs",
+        "expected_keywords": [
+          "egg",
+          "breakfast",
+          "quick",
+          "fast"
+        ],
+        "expected_cuisine": null,
+        "description": "Should find quick egg-based breakfast recipes"
+      },
+      "passed": true,
+      "metric_scores": {
+        "Correctness": 0.6,
+        "Relevance": 0.9,
+        "Helpfulness": 0.8
+      },
+      "error": null
+    },
+    {
+      "test_id": "test_2",
+      "query": "Italian pasta with tomatoes",
+      "actual_output": "Hey there! Based on your query for \"Italian pasta with tomatoes,\" I recommend the **Pasta** recipe. Here's why it's a perfect fit:\n\n### Why It’s Perfect:\n- **Classic Flavor**: This recipe combines classic Italian ingredients like sun-dried tomatoes, garlic, and fresh herbs (parsley) to create a rich, tomato-based sauce.\n- **Simple Method**: The process is straightforward—cook your pasta separately and then layer the sauce on top. No need for layering greens or onions as in the first recipe.\n- **Versatility**: It’s a great base for various pasta shapes like spaghetti, penne, or fusilli.\n\n### Tips & Substitutions:\n- **Sun-Dried Tomatoes**: If you don’t have sun-dried, you can substitute with canned tomatoes (peeled and seeded) for a similar taste.\n- **Garlic**: Use fresh garlic for authentic flavor. You can also sauté it briefly if you prefer it milder.\n- **Herbs**: Fresh parsley adds a nice touch at the end of cooking.\n\nThis recipe is perfect for a quick, hearty Italian dish that’s both satisfying and flavorful! Enjoy your meal! 🍝🍝",
+      "expected_output": "Based on your query 'Italian pasta with tomatoes', here are some great recipe recommendations:\n\n1. Summer Tomato Pasta\n2. Italian Tomato And Pasta Salad\n\nThese recipes match your preferences for pasta, tomato, italian.",
+      "scenario_info": {
+        "query": "Italian pasta with tomatoes",
+        "expected_keywords": [
+          "pasta",
+          "tomato",
+          "italian"
+        ],
+        "expected_cuisine": "Italian",
+        "description": "Should find Italian pasta recipes with tomatoes"
+      },
+      "passed": false,
+      "metric_scores": {
+        "Correctness": 0.5,
+        "Relevance": 0.8,
+        "Helpfulness": 1.0
+      },
+      "error": "Metrics: Correctness (GEval) (score: 0.4, threshold: 0.6, strict: False, error: None) failed."
+    },
+    {
+      "test_id": "test_3",
+      "query": "Healthy chicken salad",
+      "actual_output": "Based on your query for a \"Healthy Chicken Salad,\" here's my recommendation:\n\n### Best Option: **\"A Happy Chicken Salad Roll, Herby & Nutty!\"**\nThis recipe stands out as the healthiest option because it uses **light mayonnaise** (half the calories of regular mayo) and pairs it with **Greek yogurt**, which is low in fat but high in protein. It also includes herbs like tarragon and red onions for flavor, plus a pinch of turmeric for some healthy color and antioxidants. The addition of smoked almonds adds protein and nutty flavor without excessive calories.\n\n### Why This Recipe Matches Your Needs:\n1. **Healthy Balance**: By using light mayo and Greek yogurt, this salad is lower in fat compared to traditional chicken salads.\n2. **Easy to Prepare**: The recipe provides clear instructions for layering and mixing ingredients, making it simple to assemble.\n3. **Customizable**: You can adjust seasoning to your taste—some people prefer a hint of spice with sriracha or just enjoy it plain.\n\n### Helpful Tips:\n- If you want to reduce fat further, consider using olive oil in place of mayo for dressing.\n- If you're avoiding nuts, you could substitute them with other protein sources like croutons or diced avocado.\n- Adjust the seasoning to taste since some people prefer a spicy kick while others might not need it.\n\nThis recipe is perfect for a quick and nutritious meal that you can enjoy guilt-free!",
+      "expected_output": "Based on your query 'Healthy chicken salad', here are some great recipe recommendations:\n\n1. “You Don’T Even Know It’S Healthy!” Chicken Salad\n2. A Happy Chicken Salad Roll, Herby & Nutty!\n\nThese recipes match your preferences for chicken, salad, healthy.",
+      "scenario_info": {
+        "query": "Healthy chicken salad",
+        "expected_keywords": [
+          "chicken",
+          "salad",
+          "healthy"
+        ],
+        "expected_cuisine": null,
+        "description": "Should find healthy chicken salad recipes"
+      },
+      "passed": true,
+      "metric_scores": {
+        "Correctness": 0.6,
+        "Relevance": 0.9,
+        "Helpfulness": 0.7
+      },
+      "error": null
+    },
+    {
+      "test_id": "test_4",
+      "query": "Vegetarian dinner with beans",
+      "actual_output": "Based on your query for a **vegetarian dinner with beans**, here's my recommendation:\n\n### Best Option: **Vegetarian Baked Beans With Vegetables**\nThis dish is a fantastic choice because it includes only vegetarian ingredients (no meat or non-vegetarian elements) and features a variety of vegetables like onions, carrots, bell peppers, and garlic. The recipe uses white beans as the base, which are perfect for this dish. The flavors come together well with barbeque sauce, molasses, and mustard to create a rich, hearty taste.\n\n### Why This Recipe Matches Your Needs:\n1. **Vegetarian**: The recipe is entirely vegetarian.\n2. **Beans**: White beans are used as the primary legume ingredient.\n3. **Flavor Balance**: The dish incorporates vegetables and spices for depth and variety.\n4. ** texture**: The casserole mixture provides a creamy texture, while the sauce adds a tangy kick.\n\n### Helpful Tips/Substitutions:\n- If you want to substitute for bacon bits (if using), you could use another flavor of your choice or omit them entirely if you prefer no added meat.\n- Adjust the spices to suit your taste. You can also add more red wine vinegar or substitute it with another type of vinegar, like apple cider vinegar, for a different flavor profile.\n\nThis dish is both flavorful and satisfying, making it perfect for a vegetarian dinner!",
+      "expected_output": "Based on your query 'Vegetarian dinner with beans', here are some great recipe recommendations:\n\n1. Beans, Beans, Beans!\n2. Vegetarian Baked Beans With Vegetables\n\nThese recipes match your preferences for vegetarian, bean, dinner.",
+      "scenario_info": {
+        "query": "Vegetarian dinner with beans",
+        "expected_keywords": [
+          "vegetarian",
+          "bean",
+          "dinner"
+        ],
+        "expected_cuisine": null,
+        "description": "Should find vegetarian bean-based dinner recipes"
+      },
+      "passed": false,
+      "metric_scores": {
+        "Correctness": 0.7,
+        "Relevance": 1.0,
+        "Helpfulness": 0.6
+      },
+      "error": "Metrics: Correctness (GEval) (score: 0.5, threshold: 0.6, strict: False, error: None) failed."
+    },
+    {
+      "test_id": "test_5",
+      "query": "Chocolate dessert",
+      "actual_output": "It sounds like you're looking for a delicious chocolate dessert! Both recipes are fantastic options that will satisfy your cravings. Here's what I recommend:\n\n### **Creamy Chocolate Dessert**\nThis recipe is perfect if you want something creamy and rich with a classic chocolate flavor. The layers of cream cheese, pudding, and whipped cream make it both indulgent and satisfying. Plus, the cool whip on top adds a refreshing crunch! It’s great for those who prefer straightforward recipes without too many steps.\n\n### **Chocolate Dessert**\nIf you want to try something slightly more unique or customize your dessert, this recipe is worth considering. The combination of instant puddings with milk, cocoa, and vanilla extract creates an interesting flavor profile, while the whipped cream on top adds a light, airy texture. It’s perfect if you enjoy experimenting with different mix-ins like nuts or chocolate bits.\n\n### **Why These Recipes Match Your Needs**\n- **Creamy Chocolate Dessert**: Ideal for those who want a simple, no-bake dessert that comes together easily in one pot.\n- **Chocolate Dessert**: Perfect for those looking to try something a bit more adventurous or customize their dessert with additional ingredients like nuts or cocoa powder.\n\n### **Tips for Success**\n- If you're using instant pudding, make sure it's low-fat or fat-free if you’re watching your diet.\n- For the whipped cream layer in both recipes, substituting milk for cream is easy if you prefer it dairy-free.\n- If you want to elevate the dessert further, consider adding a sprinkle of cocoa powder or nuts on top.\n\nBoth recipes are delicious and versatile, so I hope either (or both!) these options become your new go-to chocolate desserts! Enjoy baking. 🧀",
+      "expected_output": "Based on your query 'Chocolate dessert', here are some great recipe recommendations:\n\n1. Cool, Creamy Chocolate Dessert-Cooking Light\n2. Chocolate Dessert\n\nThese recipes match your preferences for chocolate, dessert, sweet.",
+      "scenario_info": {
+        "query": "Chocolate dessert",
+        "expected_keywords": [
+          "chocolate",
+          "dessert",
+          "sweet"
+        ],
+        "expected_cuisine": null,
+        "description": "Should find chocolate dessert recipes"
+      },
+      "passed": false,
+      "metric_scores": {
+        "Correctness": 0.6,
+        "Relevance": 1.0,
+        "Helpfulness": 0.5
+      },
+      "error": "Metrics: Helpfulness (GEval) (score: 0.5, threshold: 0.6, strict: False, error: None) failed."
+    },
+    {
+      "test_id": "test_6",
+      "query": "Spicy Mexican food",
+      "actual_output": "Here’s my recommendation for spicy Mexican food based on your query:\n\n### **Best Options:**\n1. **Spicy Bean Enchiladas With Mexican Rice And Salsa**  \n   This dish is perfect if you're looking for a hearty and flavorful meal. It includes beans, corn, and a spicy salsa made with chili powder, cumin, and fresh cilantro. The spices give it a nice kick while the creamy texture of the beans makes it satisfying.\n\n2. **Mexican Chili**  \n   If you want something more substantial, this chili recipe is an excellent choice. It’s loaded with beans, tomatoes, and various spices like chili powder, cumin, and paprika. The smoky flavor from chipotle peppers adds depth to the dish, making it a great option for a spicy meal.\n\n### **Why These Recipes Match Your Needs:**\n- Both recipes use ingredients like beans, chili powder, and spices that are commonly associated with spicy Mexican flavors.\n- The bean enchiladas focus on beans, rice, and salsa, offering a filling and hearty side dish with a bold taste.\n- Mexican chili is a classic spicy Mexican dish that’s perfect for warming up or enjoying on its own.\n\n### **Tips:**\n- If you’re unsure about the spice level, start with a small amount of chili powder and adjust to your preferred heat level. You can also substitute your favorite beans if you prefer fewer spices.\n- For the bean enchiladas, consider using different types of beans for variety (e.g., black beans instead of kidney beans) or add more tomato paste for extra acidity.\n\nEnjoy your spicy Mexican culinary adventure! Let me know if you’d like more tips on adjusting these recipes to your taste. 😊",
+      "expected_output": "Based on your query 'Spicy Mexican food', here are some great recipe recommendations:\n\n1. Spicy Bean Enchiladas With Mexican Rice And Salsa\n2. Spicy Mexican Rice And Corn With Beans\n\nThese recipes match your preferences for spicy, mexican.",
+      "scenario_info": {
+        "query": "Spicy Mexican food",
+        "expected_keywords": [
+          "spicy",
+          "mexican"
+        ],
+        "expected_cuisine": "Mexican",
+        "description": "Should find spicy Mexican recipes"
+      },
+      "passed": true,
+      "metric_scores": {
+        "Correctness": 0.6,
+        "Relevance": 1.0,
+        "Helpfulness": 0.6
+      },
+      "error": null
+    },
+    {
+      "test_id": "test_7",
+      "query": "Low carb keto meal",
+      "actual_output": "Hello! It sounds like you're looking for recipes that align with a low-carb keto diet. While I can't confirm whether these specific recipes are explicitly keto or low-carb without seeing the diet tags, I can offer some guidance based on what's provided.\n\nFor **low-carb keto meals**, the **Keto Chicken Salad** seems like an excellent option because it provides detailed nutritional information that aligns with keto-friendly macros. The salad includes ingredients like cooked chicken breast, avocado, celery, bacon, and seasonings, which are typically part of a keto meal. It also mentions serving suggestions, such as lettuce wraps or in a low-carb tortilla, which is perfect for keto cravings.\n\nThe **Low-Carb Meatloaf** could also work if it's keto-friendly. The mention of kraft low-carb barbecue sauce suggests it might fit well on a low-carb diet. However, to be certain, you might want to double-check if the recipe explicitly follows a keto plan with high-fat and low-carb ratios.\n\nI recommend looking for keywords like \"low-carb,\" \"keto,\" or \"high-fat\" in the recipe descriptions to ensure it aligns with your dietary goals. If these aren't specified, consider reaching out to the cookbook provider for clarification on their specific diets.\n\nIf you'd like, I can help suggest substitutions or adjustments based on the recipes provided! Let me know how you get along with these options. 😊",
+      "expected_output": "Based on your query 'Low carb keto meal', here are some great recipe recommendations:\n\n1. Delicious Low-Carb Meatloaf\n2. Keto Chicken Salad\n\nThese recipes match your preferences for low carb, keto, protein.",
+      "scenario_info": {
+        "query": "Low carb keto meal",
+        "expected_keywords": [
+          "low carb",
+          "keto",
+          "protein"
+        ],
+        "expected_cuisine": null,
+        "description": "Should find low-carb/keto friendly recipes"
+      },
+      "passed": false,
+      "metric_scores": {
+        "Correctness": 1.0,
+        "Relevance": 0.6,
+        "Helpfulness": 0.4
+      },
+      "error": "Metrics: Relevance (GEval) (score: 0.6, threshold: 0.7, strict: False, error: None), Helpfulness (GEval) (score: 0.0, threshold: 0.6, strict: False, error: None) failed."
+    },
+    {
+      "test_id": "test_8",
+      "query": "Asian stir fry with vegetables",
+      "actual_output": "Based on your query for an Asian-style stir fry with vegetables, here's my recommendation:\n\n### Recipe Recommendation: **Mixed Vegetable Stir Fry**\n\n#### Why It Matches Your Needs:\n- This recipe offers a wide variety of vegetables including carrots, asparagus, yellow squash, celery, tomatoes, and more. It’s packed with fresh flavors from rice vinegar, soy sauce, catsup, and five spice powder.\n- The method involves chopping all ingredients uniformly, which makes it easier to combine them in the wok for a quick stir fry.\n- It's a complete meal when served over farro or brown rice.\n\n#### Why I Think It’s Perfect:\n- If you're looking for a substantial Asian-style stir fry with a good variety of vegetables, this recipe is ideal. The flavors are balanced and the cooking method ensures tender-crisp vegetables while keeping everything vibrant.\n- If you don’t have fresh herbs on hand, you can substitute them with any fresh veggies you prefer.\n\n#### Tips:\n- If you want to simplify, halve the amount of oil in the recipe (about 1 tablespoon instead of 2 tablespoons). Stir-fry will cook quickly and evenly without needing too much oil.\n- For a crunchier texture, consider using a bit less water when adding the tomatoes at the end. A splash or two of vinegar can add an extra burst of acidity.\n\nThis dish is hearty, flavorful, and perfect for meal prepping or sharing with friends! Enjoy your cooking adventure! 🍄✨",
+      "expected_output": "Based on your query 'Asian stir fry with vegetables', here are some great recipe recommendations:\n\n1. Asian Vegetable Stir Fry (Tokyo Tokyo Style)\n2. Mixed Vegetable Stir Fry\n\nThese recipes match your preferences for asian, stir fry, vegetable.",
+      "scenario_info": {
+        "query": "Asian stir fry with vegetables",
+        "expected_keywords": [
+          "asian",
+          "stir fry",
+          "vegetable"
+        ],
+        "expected_cuisine": "Asian",
+        "description": "Should find Asian vegetable stir fry recipes"
+      },
+      "passed": true,
+      "metric_scores": {
+        "Correctness": 0.7,
+        "Relevance": 1.0,
+        "Helpfulness": 1.0
+      },
+      "error": null
+    }
+  ],
+  "metric_scores": {
+    "Correctness": [
+      0.6,
+      0.5,
+      0.6,
+      0.7,
+      0.6,
+      0.6,
+      1.0,
+      0.7
+    ],
+    "Relevance": [
+      0.9,
+      0.8,
+      0.9,
+      1.0,
+      1.0,
+      1.0,
+      0.6,
+      1.0
+    ],
+    "Helpfulness": [
+      0.8,
+      1.0,
+      0.7,
+      0.6,
+      0.5,
+      0.6,
+      0.4,
+      1.0
+    ]
+  }
+}

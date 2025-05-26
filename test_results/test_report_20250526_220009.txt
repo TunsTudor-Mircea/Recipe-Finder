@@ -1,0 +1,59 @@
+
+        ╔══════════════════════════════════════════════════════════════════╗
+        ║                     RAG RECIPE TESTING REPORT                   ║
+        ╚══════════════════════════════════════════════════════════════════╝
+
+        Test Run Timestamp: 2025-05-26T21:51:43.686363
+
+        SUMMARY:
+        ────────────────────────────────────────────────────────────────────
+        Total Tests:  8
+        Passed:       4 (50.0%)
+        Failed:       4 (50.0%)
+
+        METRIC AVERAGES:
+        ────────────────────────────────────────────────────────────────────
+        Correctness : 0.663
+        Relevance   : 0.900
+        Helpfulness : 0.700
+        
+
+        DETAILED RESULTS:
+        ────────────────────────────────────────────────────────────────────
+        
+        ✅ PASS | test_1 | Quick breakfast with eggs...
+                Correctness: 0.600
+                Relevance: 0.900
+                Helpfulness: 0.800
+        ❌ FAIL | test_2 | Italian pasta with tomatoes...
+                Correctness: 0.500
+                Relevance: 0.800
+                Helpfulness: 1.000
+                Error: Metrics: Correctness (GEval) (score: 0.4, threshold: 0.6, strict: False, error: None) failed.
+        ✅ PASS | test_3 | Healthy chicken salad...
+                Correctness: 0.600
+                Relevance: 0.900
+                Helpfulness: 0.700
+        ❌ FAIL | test_4 | Vegetarian dinner with beans...
+                Correctness: 0.700
+                Relevance: 1.000
+                Helpfulness: 0.600
+                Error: Metrics: Correctness (GEval) (score: 0.5, threshold: 0.6, strict: False, error: None) failed.
+        ❌ FAIL | test_5 | Chocolate dessert...
+                Correctness: 0.600
+                Relevance: 1.000
+                Helpfulness: 0.500
+                Error: Metrics: Helpfulness (GEval) (score: 0.5, threshold: 0.6, strict: False, error: None) failed.
+        ✅ PASS | test_6 | Spicy Mexican food...
+                Correctness: 0.600
+                Relevance: 1.000
+                Helpfulness: 0.600
+        ❌ FAIL | test_7 | Low carb keto meal...
+                Correctness: 1.000
+                Relevance: 0.600
+                Helpfulness: 0.400
+                Error: Metrics: Relevance (GEval) (score: 0.6, threshold: 0.7, strict: False, error: None), Helpfulness (GEval) (score: 0.0, threshold: 0.6, strict: False, error: None) failed.
+        ✅ PASS | test_8 | Asian stir fry with vegetables...
+                Correctness: 0.700
+                Relevance: 1.000
+                Helpfulness: 1.000
