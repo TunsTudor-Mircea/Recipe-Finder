@@ -10,7 +10,7 @@ app = FastAPI()
 # Enable CORS so React (on port 3000) can call this API
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # In production, specify "http://localhost:3000"
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -18,7 +18,7 @@ app.add_middleware(
 
 # Load vector store and initialize RAG model
 recipe_finder = RecipeFinder()
-recipe_finder.load_vector_store("backend/recipe_finder_index")
+recipe_finder.load_vector_store("C:/Projects/Recipe-Finder/backend/recipe_finder_index")
 recipe_generator = RecipeGenerator(api_url="http://localhost:11434/api/chat")
 
 
@@ -37,3 +37,8 @@ def generate_recipe(request_data: QueryRequest):
         return {"response": response}
     except Exception as e:
         return {"error": str(e)}
+
+# Keep the server running until manually stopped
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="localhost", port=8000)

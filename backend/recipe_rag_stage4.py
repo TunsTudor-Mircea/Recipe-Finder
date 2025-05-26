@@ -16,10 +16,10 @@ class RecipeGenerator:
         Initialize the recipe generator with the Gemma3 API endpoint.
 
         Args:
-            api_url: URL of the Gemma3 API endpoint (default: local Ollama server)
+            api_url: URL of the Deepseek API endpoint (default: local Ollama server)
         """
         self.api_url = api_url
-        logger.info(f"Initializing Recipe Generator with Gemma3 at {api_url}")
+        logger.info(f"Initializing Recipe Generator with deepseek at {api_url}")
 
     def format_recipe_for_prompt(self, recipe_doc: Document) -> str:
         """
@@ -89,11 +89,11 @@ class RecipeGenerator:
 
         User query: {query}
 
-        Here are the relevant recipes I found:
+        Here are some recipes I found in a cookbook that might match the user's query:
 
         {formatted_recipes}
 
-        Please provide a personalized response that:
+        Please provide a response that:
         1. Recommends the best option(s) for the user's query
         2. Explains why these recipes match their needs
         3. Offers any helpful tips or substitutions
@@ -102,7 +102,7 @@ class RecipeGenerator:
 
         # Prepare the payload for the API request
         payload = {
-            "model": "gemma3:4b",  # Using the model specified in your example
+            "model": "deepseek-r1:7b",
             "messages": [
                 {
                     "role": "user",
@@ -118,11 +118,16 @@ class RecipeGenerator:
             # Check if the request was successful
             if response.status_code == 200:
                 # Collect all response content
+                import re
+
                 full_response = ""
                 for line in response.iter_lines():
                     if line:
                         json_line = json.loads(line)
                         full_response += json_line["message"]["content"]
+
+                # Remove <think>...</think> section (including newlines and multi-line content)
+                full_response = re.sub(r"<think>.*?</think>", "", full_response, flags=re.DOTALL).strip()
 
                 logger.info("Generated response successfully")
                 return full_response
