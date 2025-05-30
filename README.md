@@ -30,7 +30,7 @@ Vector Store: **FAISS**
 
 Retriever: **LangChain**
 
-LLM: **Google Gemma 3**
+LLM: **deepseek-r1**
 
 Frontend: **React**
 
